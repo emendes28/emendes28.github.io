@@ -1,60 +1,85 @@
 var data = {
     "works" : [ {
-            "img" : "img/projects/basic-page-and-css.png",
+            "imgFull" : "basic-page-and-css.png",
+            "view" : "projects/basic-page-and-css/index.html",
+            "img" : "basic-page-and-css-230x120.png",
             "description" : "Basic page and css",
             "alt" : "basic page and css",
             "link" : "https://goo.gl/r5hwi3"
         },{
-            "img" : "img/projects/blog-post-exemple.png",
+            "imgFull" : "blog-post-exemple.png",
+            "view" : "projects/blog-post-exemple/index.html",
+            "mockup" :  "projects/blog-post-exemple/web-dev-blog.png",
+            "img" : "blog-post-exemple-230x120.png",
             "description" : "Blog post exemple",
             "alt" : "blog post exemple",
             "link" : "https://goo.gl/WDzP52e"
         },{
-            "img" : "img/projects/bootstrap-landing-page.png",
+            "imgFull" : "bootstrap-landing-page.png",
+            "view" : "projects/bootstrap-landing-page/index.html",
+            "img" : "bootstrap-landing-page-230x120.png",
             "description" : "Bootstrap landing page",
             "alt" : "bootstrap landing page",
             "link" : "https://goo.gl/Kn1ULE"
         },{
-            "img" : "img/projects/card.png",
+            "imgFull" : "card.png",
+            "view" : "projects/card/index.html",
+            "mockup" :  "projects/card/design-prototype.png",
+            "img" : "card-230x120.png",
             "description" : "Card",
             "alt" : "card of animal",
             "link" : "https://goo.gl/Bnc6eK"
         },{
-            "img" : "img/projects/css-simpĺe-exemple.png",
+            "imgFull" : "css-simpĺe-exemple.png",
+            "view" : "projects/css-simpĺe-exemple/index.html",
+            "img" : "css-simpĺe-exemple-230x120.png",
             "description" : "Css simpĺe exemple",
             "alt" : "css simpĺe exemple",
             "link" : "https://goo.gl/D2upPu"
         },{
-            "img" : "img/projects/EncarteDigital.png",
+            "imgFull" : "EncarteDigital.png",
+            "view" : "projects/EncarteDigital/index.html",
+            "img" : "EncarteDigital-230x120.png",
             "description" : "Encarte Digital",
             "alt" : "encarte digital",
             "link" : "https://goo.gl/7XvTjK"
         },{
-            "img" : "img/projects/figures.png",
+            "imgFull" : "figures.png",
+            "view" : "projects/figures/index.html",
+            "img" : "figures-230x120.png",
             "description" : "Figures",
             "alt" : "figures project",
             "link" : "https://goo.gl/UInpCE"
         },{
-            "img" : "img/projects/mockup-to-article.png",
+            "imgFull" : "mockup-to-article.png",
+            "view" : "projects/mockup-to-article/index.html",
+            "mockup" :  "projects/mockup-to-article/blog-mockup.pdf",
+            "img" : "mockup-to-article-230x120.png",
             "description" : "Mockup to article",
             "alt" : "Mockup to article",
             "link" : "https://goo.gl/zWdkqK"
         },{
-            "img" : "img/projects/toplist.png",
+            "imgFull" : "toplist.png",
+            "view" : "projects/toplist/index.html",
+            "img" : "toplist-230x120.png",
             "description" : "Top list",
             "alt" : "toplist",
             "link" : "https://goo.gl/MRzbBO"
         }                     
     ] 
+};
+var i = 1;
+for (var work in data.works){
+    data.works[work].id = i++;
 }
 
 /*{
-            "img" : "img/projects/d3-project.png",
+            "img" : "d3-project.png",
             "description" : "D3 project",
             "alt" : "d3 project",
             "link" : "https://goo.gl/enVaOt"
         },{
-            "img" : "img/projects/Responsive.png",
+            "img" : "Responsive.png",
             "description" : "Responsive",
             "alt" : "Responsive",
             "link" : "https://github.com/esimendes28/portifolio/FrontEnd/Responsive"
