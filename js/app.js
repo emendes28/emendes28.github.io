@@ -34,14 +34,12 @@ function openModal(id){
                 </figure>
             </div>
            <div class="modal-footer">
-                <div class="row">
-                    <blockquote class="col-3" >
+                    <blockquote class="col" >
                         <button class="button" onclick="window.open('`+url.concat(work.view)+
                         `')" alt="View the project" ><span>Open result</span></button></blockquote>`;
                         if(work.mockup != undefined)
-                            content = content + '<blockquote class="col-3"><button class="button" onclick="window.open(\''+url.concat(work.mockup)+'\')" alt="View the project" ><span>Open mockup</span></button></blockquote>';
-                    content = content +`<blockquote class="col-3"><button class="button"  onclick="window.open('`+work.link+`')"  ><span>View codding</span></button></blockquote>   
-                </div>
+                            content = content + '<blockquote class="col"><button class="button" onclick="window.open(\''+url.concat(work.mockup)+'\')" alt="View the project" ><span>Open mockup</span></button></blockquote>';
+                    content = content +`<blockquote class="col"><button class="button"  onclick="window.open('`+work.link+`')"  ><span>View codding</span></button></blockquote>  
            </div>`;
     modal.innerHTML = content;
     modal.style.display = "block";

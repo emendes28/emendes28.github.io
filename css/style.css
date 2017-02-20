@@ -40,14 +40,34 @@ body {
 
     }
 
-
     .name {
         font-size: 120%;
     }
+
+    /*  W3School bassed */
+    .button {
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 12px;
+        padding: 20px;
+        width: 133px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+    
+
+    .imgFull {
+        display: none;
+    }
+
 }
 
 
-@media screen and (max-width: 760px){      
+@media screen and (max-width: 875px){      
     #main {
         display: block;
         max-width: 100%;
@@ -56,7 +76,7 @@ body {
 
     
     .fig-project {
-        display: none;
+        max-width: 100%;
     }
 
 
@@ -134,9 +154,9 @@ h2 {
     font-size: 80%;
 }
 
-.the-centra-limg {
-    margin: 0 auto;
-    max-width: 100%;
+.the-central-img {
+    margin: 0 -4%;
+    max-width: 108%;
 }
 
 
@@ -146,6 +166,7 @@ h2 {
  
 
 
+/*  W3School  */
 .button {
   border-radius: 4px;
   background-color: #f4511e;
@@ -160,6 +181,7 @@ h2 {
   margin: 5px;
 }
 
+/*  W3School  */
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -167,6 +189,7 @@ h2 {
   transition: 0.5s;
 }
 
+/*  W3School  */
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -176,23 +199,19 @@ h2 {
   transition: 0.5s;
 }
 
+/*  W3School  */
 .button:hover span {
   padding-right: 25px;
 }
 
+/*  W3School  */
 .button:hover span:after {
   opacity: 1;
   right: 0;
 }
 
- /* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
 
-/* The Modal (background) */
+/* The Modal (background) W3School  */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -207,7 +226,7 @@ h2 {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content W3School  */
 .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -223,18 +242,19 @@ h2 {
     animation-duration: 0.4s
 }
 
-/* Add Animation */
+/* Add Animation W3School  */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
 }
+/*  W3School  */
 
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
+/* The Close Button W3School  */
 .close {
     color: white;
     float: right;
@@ -242,6 +262,7 @@ h2 {
     font-weight: bold;
 }
 
+/*  W3School  */
 .close:hover,
 .close:focus {
     color: green;
@@ -249,6 +270,7 @@ h2 {
     cursor: pointer;
 }
 
+/*  W3School  */
 .modal-header {
     padding: 21px 16px;
     background-color: #000;
@@ -256,8 +278,10 @@ h2 {
     color: white;
 }
 
+/*  W3School  */
 .modal-body {padding: 2px 16px;}
 
+/*  W3School  */
 .modal-footer {
     padding: 2px 16px;
     border-radius: 10px;
