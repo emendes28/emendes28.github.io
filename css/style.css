@@ -22,28 +22,18 @@ a:hover {
 }
 
 
-@media screen and (min-width: 1000){
+@media screen and (min-width: 1000px){
      .conteiner {
         width: 70%;
         margin: 0 auto;
     }
 }
 
-
-@media screen and (min-width: 760){    
-    .col {
-        float: left;
-        width: calc(100%/3 - 3%);
-        margin: 10;
+@media screen and (max-width: 500px){
+    .the-central-img  {
+        width: 100%;
     }
 
-
-    .name {
-        font-size: 300%;
-    }
-}
-
-@media screen and (max-width: 500){
     body {
         background-color: #d3d3d3;
         margin: 0 10%;
