@@ -15,22 +15,27 @@ a {
 }
 
 
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+
 a:hover {
     color:dodgerblue;
     font-size: 120%;
     font-family: 'Orbitron', sans-serif;
 }
 
-
-@media screen and (min-width: 1000px){
-     .conteiner {
-        width: 70%;
-        margin: 0 auto;
+@media screen and (max-width: 1200px){
+    .col {
+        float: left;
+        width: calc(100%/2 - 3%);
+        height: 224px;
     }
 }
-
 @media screen and (max-width: 500px){
-    .the-central-img  {
+    .the__central__img  {
         width: 100%;
     }
 
@@ -42,7 +47,7 @@ a:hover {
 
     .col {
         float: left;
-        width: calc(100%/2 - 10%);
+        width: 100%;
          
 
     }
@@ -56,10 +61,6 @@ a:hover {
         font-size: 120%;
     }    
 
-    .imgFull {
-        display: none;
-    }
-
 }
 
 
@@ -71,7 +72,7 @@ a:hover {
     }
 
     
-    .fig-project {
+    .fig__project {
         max-width: 100%;
     }
 
@@ -87,7 +88,7 @@ a:hover {
     }
     
 
-    .the-central-img  {
+    .the__central__img  {
        margin-right: -8%;
     }
 }
@@ -97,7 +98,7 @@ a:hover {
 .header {
     display: flex;  
     margin: 0;  
-    font-family: 'Orbitron', sans-serif;
+    font-family: fantasy;
     margin-bottom: 1px;
 }
 
@@ -133,7 +134,7 @@ h2 {
 }
 
 
-.main-img {         
+.main__img {         
     max-width: 100%;
 }
 
@@ -149,22 +150,11 @@ h2 {
 
 .col {
     float: left;
-    width: calc(100%/3 - 8%);
-    margin: 10;
+    width: calc(100%/3);
     height: 224px;
 }
 
-
-.legend {
-    font-size: 80%;
-}
-
-.the-central-img {
+.the__central__img {
     margin: 0 -4%;
     max-width: 108%;
-}
-
-
-.imgFull {
-    max-width: 100%;
 }

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/framework.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="css/framework.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <title>Portifolio</title>
     </head>
     <body>
@@ -27,18 +27,29 @@
             <hr />
             <!-- Pronto central da aplicação -->
             <section class="grid conteiner">
-                <figure class="main-img">
+                <figure class="main__img">
                     <!-- Banner principal -->
                     <picture> 
                         <source srcset="img/main.png" media="(min-width: 900px)">
-                        <img class="the-central-img" src="img/main-smal.png" alt="15 Most Popular Programming Languages You Must Learn in 2015">
+                        <img class="the__central__img" src="img/main-smal.png" 
+                        alt="15 Most Popular Programming Languages You Must Learn in 2015">
                     </picture>
                 </figure>
                 <h3>Featured Work </h3>
                 <!-- Código injetado via js com os projetos realizados-->
-                <div id="main" class="grid"></div>
-                <!-- W3scholl modal-->
-                <div id="myModal" class="modal">
+                <div id="main" class="grid">
+                    <script type="text/template" id="jobTemplate">
+                        <figure class="col" >                             
+                            <a href="{{work.link}}">
+                                <img src="images_src/{{work.img}}" alt="{{work.alt}}">
+                                <figcaption>
+                                    <h2>{{work.description}}<br />
+                                        <em>{{work.link}}</em>
+                                    </h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </script>
                 </div>
             </section>            
             <footer  class="row">
