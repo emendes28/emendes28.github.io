@@ -9,13 +9,6 @@ body {
 }
 
 
-img:hover {         
-    width: 105%;
-    border: 3px double #000;
-    background-color: lightgrey;
-}
-
-
 a {
     color:#000;
     text-decoration:none;
