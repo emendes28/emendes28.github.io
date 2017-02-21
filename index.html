@@ -10,64 +10,65 @@
         <title>Portifolio</title>
     </head>
     <body>
-        <article>
-
+        <article class="grid">
             <!-- Cabeçalho -->
-            <header class="header row">
-                <figure class="col-4">
+            <header class="row">
+                <figure class="col-2">
                     <img class="logo" src="img/logo.svg" alt="my logo an image of terminal codding">
                 </figure>
-                <div class="col-8">
-                    <h1 class="title name">Evandro Mendes</h1>
-                    <h4 class="title function">Full Stack Developer</h4>
+                <div id="title" class="col-10">
+                <h1 class="title name">Evandro Mendes</h1>
+                <h4 class="title function">Front-End Developer</h4>
                 </div>
             </header>
 
             <!-- Linha divisória -->
             <hr />
             <!-- Pronto central da aplicação -->
-            <section class="grid conteiner">
-                <figure class="main__img">
-                    <!-- Banner principal -->
-                    <picture> 
+            <main class="row">
+                <figure class="col-12">
+                <!-- Banner principal -->
+                <picture>
                         <source srcset="img/main.png" media="(min-width: 900px)">
-                        <img class="the__central__img" src="img/main-smal.png" 
-                        alt="15 Most Popular Programming Languages You Must Learn in 2015">
-                    </picture>
+                        <img src="img/main-smal.png" alt="15 Most Popular Programming Languages You Must Learn in 2015">
+                </picture>
                 </figure>
+            </main>
+            
+            <section class="row">
+                <header class="col-12">
                 <h3>Featured Work </h3>
-                <!-- Código injetado via js com os projetos realizados-->
-                <div id="main" class="grid">
-                    <script type="text/template" id="jobTemplate">
-                        <figure class="col" >                             
-                            <a href="{{work.link}}">
-                                <img src="images_src/{{work.img}}" alt="{{work.alt}}">
-                                <figcaption>
-                                    <h2>{{work.description}}<br />
-                                        <em>{{work.link}}</em>
-                                    </h2>
-                                </figcaption>
-                            </a>
-                        </figure>
-                    </script>
-                </div>
-            </section>            
-            <footer  class="row">
+                </header>
+                
+                <!-- substitui temporariamente o código do JS -->
+                <script type="text/template" id="jobTemplate">
+                    <figure class="col">
+                        <a href="#main">
+                            <img src="images_src/{{work.img}}" alt="{{work.alt}}">
+                            <figcaption>
+                            <h2>{{work.description}}</h2>
+                            <h3><em>{{work.link}}</em></h3>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </script>
+                
+            </section>
+
+            <footer class="row">
                 <!-- Autor : Evandro Mendes-->
                 <p class="col-10">&copy;2017 Evandro Mendes.</p>
                 <p class="col-2">
-                    <!-- Site Validado conforme W3C-->
-                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                        <img style="border:0;width:88px;height:31px"
-                            src="http://jigsaw.w3.org/css-validator/images/vcss"
-                            alt="CSS válido!" />
-                    </a>
-                </p>                        
+                <!-- Site Validado conforme W3C-->
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS válido!" />
+                </a>
+                </p>
             </footer>
+            </article>
             <!-- Array com os trabalhos realizados -->
             <script src="data/work.js"></script>
             <!-- Código a ser injetado -->
             <script src="js/app.js"></script>
-        </article>
     </body>
 </html>
