@@ -22,7 +22,7 @@ a:hover {
 }
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000){
      .conteiner {
         width: 70%;
         margin: 0 auto;
@@ -30,11 +30,11 @@ a:hover {
 }
 
 
-@media screen and (min-width: 760px){    
+@media screen and (min-width: 760){    
     .col {
         float: left;
         width: calc(100%/3 - 3%);
-        margin: 10px;
+        margin: 10;
         height: 224px;
         cursor: pointer;
     }
@@ -45,12 +45,17 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 500px){ 
+@media screen and (max-width: 500){ 
     .col {
         float: left;
         width: calc(100%/2 - 10%);
          
 
+    }
+    
+    .conteiner {
+        width: 100%;
+        margin: 0 1px;
     }
 
     .name {
@@ -104,8 +109,8 @@ a:hover {
 
 
 .name {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     text-align: right;
 }
 
@@ -130,7 +135,7 @@ h3 {
 h2 {
     margin-top: 3px;
     font-size: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 
@@ -141,9 +146,9 @@ h2 {
 
 
 .function {
-    padding-top: 0px;
+    padding-top: 0;
     font-size: 130%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: right;
 }
 
