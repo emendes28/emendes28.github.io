@@ -35,8 +35,6 @@ a:hover {
         float: left;
         width: calc(100%/3 - 3%);
         margin: 10;
-        height: 224px;
-        cursor: pointer;
     }
 
 
@@ -45,7 +43,13 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 500){ 
+@media screen and (max-width: 500){
+    body {
+        background-color: #d3d3d3;
+        margin: 0 10%;
+    }
+
+
     .col {
         float: left;
         width: calc(100%/2 - 10%);
@@ -150,6 +154,14 @@ h2 {
     font-size: 130%;
     margin-bottom: 0;
     text-align: right;
+}
+
+
+.col {
+    float: left;
+    width: calc(100%/3 - 8%);
+    margin: 10;
+    height: 224px;
 }
 
 
