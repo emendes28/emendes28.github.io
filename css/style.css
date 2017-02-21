@@ -9,6 +9,26 @@ body {
 }
 
 
+img:hover {         
+    width: 105%;
+    border: 3px double #000;
+    background-color: lightgrey;
+}
+
+
+a {
+    color:#000;
+    text-decoration:none;
+}
+
+
+a:hover {
+    color:dodgerblue;
+    font-size: 120%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
 @media screen and (min-width: 1000px){
      .conteiner {
         width: 70%;
@@ -124,6 +144,7 @@ h2 {
 .main-img {         
     max-width: 100%;
 }
+
 
 
 .function {
