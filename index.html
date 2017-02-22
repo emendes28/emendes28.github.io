@@ -35,24 +35,10 @@
                 </figure>
             </main>
             
-            <section class="row">
+            <section id="jobs" class="row">
                 <header class="col-12">
                 <h3>Featured Work </h3>
                 </header>
-                
-                <!-- substitui temporariamente o código do JS -->
-                <script type="text/template" id="jobTemplate">
-                    <figure class="col">
-                        <a href="#main">
-                            <img src="images_src/{{work.img}}" alt="{{work.alt}}">
-                            <figcaption>
-                            <h2>{{work.description}}</h2>
-                            <h3><em>{{work.link}}</em></h3>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </script>
-                
             </section>
 
             <footer class="row">
@@ -66,6 +52,19 @@
                 </p>
             </footer>
             </article>
+
+            <!-- substitui temporariamente o código do JS -->
+            <script type="text/template" id="jobTemplate">
+                <figure class="col">
+                    <a href="#main">
+                        <img src="images_src/{{work.img}}" alt="{{work.alt}}">
+                        <figcaption>
+                        <h2>{{work.description}}</h2>
+                        <h3><em>{{work.link}}</em></h3>
+                        </figcaption>
+                    </a>
+                </figure>
+            </script>
             <!-- Array com os trabalhos realizados -->
             <script src="data/work.js"></script>
             <!-- Código a ser injetado -->
