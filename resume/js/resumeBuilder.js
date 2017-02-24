@@ -6,12 +6,17 @@ function inName(name) {
     // Don't delete this line!
 }
 
-var skills = ["programming","analist","developer","codding","research","consulting"];
+function show() {
+    bio.display();
+    education.display();
+    projects.display();
+    work.display();
 
-var languagues = [{"name" : "portuguese", "proficiency": 100},
-                  {"name" : "english", "proficiency": 60},
-                  {"name" : "spanish", "proficiency": 40},
-                  {"name" : "french", "proficiency": 10}];
+    $('#main').append(internationalizeButton);
+    $("#mapDiv").append(googleMap);
+}
+
+var skills = ["programming","analist","developer","codding","research","consulting"];
 
 var bio = {
     "name" : "Evandro Mendes",
@@ -65,8 +70,6 @@ var bio = {
        
     }
 };
-
-bio.display();
 
 var education = {
     "schools" : [
@@ -190,8 +193,6 @@ var education = {
     }
 };
 
-education.display();
-
 var work = {
     "jobs" : [
         {
@@ -248,19 +249,18 @@ var work = {
                         var formattedTitle =  HTMLworkTitle.replace("%data%",work.jobs[job].title);
                         var formattedEmployerTitle = formattedEmployer + formattedTitle;
                         var formattedDates =  HTMLworkDates.replace("%data%",work.jobs[job].dates);
-                        var formattedLocation =  HTMLworkDates.replace("%data%",work.jobs[job].location);
                         var formattedDescription =  HTMLworkDescription.replace("%data%",work.jobs[job].description);
+                        var formattedLocation =  HTMLworkLocation.replace("%data%",work.jobs[job].location);
 
-                        $("#workExperience").after(HTMLworkStart);
+                        $("#workExperience").append(HTMLworkStart);
                         $(".work-entry:last").append(formattedEmployerTitle);                        
                         $(".work-entry:last").append(formattedDates);
-                        $(".work-entry:before").append(formattedLocation);
+                        $(".work-entry:last").append(formattedLocation);
                         $(".work-entry:last").append(formattedDescription);
                     }                    
                 }
 };
 
-work.display();
 
 var projects = {
     "projects" : [ 
@@ -440,8 +440,4 @@ var projects = {
                }
 };
 
-projects.display();
-
-$('#main').append(internationalizeButton);
-
-$("#mapDiv").append(googleMap);
+show();
