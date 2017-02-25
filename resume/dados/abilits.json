@@ -1,0 +1,26 @@
+{
+ "name": "Java",
+ "children": [
+  {
+   "name": "Enterprise Edition",
+   "children": [
+      {"name": "Jpa", "size": 3812},
+      {"name": "Hibernate", "size": 6714},
+      {"name": "JAX-RS", "size": 2047},
+      {"name": "JAX-WS", "size": 6714},
+      {"name": "EJB", "size": 5842},
+      {"name": "EJB", "size": 5842}      
+   ]
+  },
+  {
+   "name": "Standart Edition",
+   "children": [
+    {"name": "Stream", "size": 17010},
+    {"name": "Lambda", "size": 5842},
+    {"name": "Funcional Interface", "size": 1375},
+    {"name": "Servlet", "size": 2202},
+    {"name": "JUnit", "size": 2047}
+    ]
+   }
+ ]
+}

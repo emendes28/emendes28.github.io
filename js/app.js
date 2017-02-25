@@ -5,6 +5,7 @@ while(data.hasNext()){
     document.getElementById('jobs').innerHTML.concat(
         document.getElementById('jobTemplate').innerHTML
             .replace("{{work.link}}",work.link).
+             replace("{{work.link}}",work.link).
              replace("{{work.img}}",work.img).
              replace("{{work.alt}}",work.alt).
              replace("{{work.description}}",work.description).

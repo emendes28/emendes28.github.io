@@ -1,24 +1,65 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300');
+
 a {
   color: black;
   text-decoration: none;
+}
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+hr {
+  border: 0;
+  background-color: #BCBBBB;
+  height: 3px;
 }
 
 .col {
   width: 100%;
   padding: 2px;
+  text-align: center;
+  padding: 10px 20px;
 }
 
 .col img {
   width: 100%;
-  border: 1px solid #000;
-  margin: 1px;
+  height: 162px;
+  margin: 4%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.central {
+  border: 10px solid transparent;
+  border-radius: 15px;    
+  height: 25em;
+}
+
+.logo {
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
   .col {
     width: 50%;
   }
+
+  .logo {
+    display: block;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -30,4 +71,25 @@ a {
 #title {
   text-align: right;
   font-size: 2em;
+  align-self: flex-end;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
 }

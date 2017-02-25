@@ -3,7 +3,6 @@ function inName(name) {
     names[1] = names[1].toUpperCase();
     names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();   
     return names.join(" ");
-    // Don't delete this line!
 }
 
 function show() {
@@ -12,7 +11,7 @@ function show() {
     projects.display();
     work.display();
 
-    $('#main').append(internationalizeButton);
+    //$('#main').append(internationalizeButton);
     $("#mapDiv").append(googleMap);
 }
 
@@ -63,10 +62,10 @@ var bio = {
 
 
             $("#header").append(HTMLskillsStart);
-        for(skill in bio.skills){
+        /*for(skill in bio.skills){
             formattedSkill = HTMLskills.replace("%data%",bio.skills[skill]);
             $("#skills").prepend(formattedSkill);
-        }
+        }*/
        
     }
 };
