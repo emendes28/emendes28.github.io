@@ -1,26 +1,145 @@
 {
- "name": "Java",
+ "name": "Developer",
  "children": [
-  {
-   "name": "Enterprise Edition",
-   "children": [
-      {"name": "Jpa", "size": 3812},
-      {"name": "Hibernate", "size": 6714},
-      {"name": "JAX-RS", "size": 2047},
-      {"name": "JAX-WS", "size": 6714},
-      {"name": "EJB", "size": 5842},
-      {"name": "EJB", "size": 5842}      
-   ]
-  },
-  {
-   "name": "Standart Edition",
-   "children": [
-    {"name": "Stream", "size": 17010},
-    {"name": "Lambda", "size": 5842},
-    {"name": "Funcional Interface", "size": 1375},
-    {"name": "Servlet", "size": 2202},
-    {"name": "JUnit", "size": 2047}
+   {
+    "name": "BackEnd",
+    "children": [
+      {
+        "name": "Java",
+        "children": [
+            {
+              "name": "Enterprise Edition",
+              "children": [
+                  {"name": "Hibernate", "size": 6714},
+                  {"name": "JAX-RS", "size": 2047},
+                  {"name": "JAX-WS", "size": 6714},
+                  {"name": "EJB", "size": 5842},
+                  {"name": "JPA", "size": 5842}      
+              ]
+            },
+            {
+            "name": "Standart Edition",
+            "children": [
+              {"name": "Stream", "size": 17010},
+              {"name": "Lambda", "size": 5842},
+              {"name": "Funcional Interface", "size": 1375},
+              {"name": "Servlet", "size": 2202},
+              {"name": "JUnit", "size": 2047}
+              ]
+            },
+            {
+            "name": "IDE's",
+            "children": [
+              {"name": "JasperReport", "size": 17010},
+              {"name": "Eclipse", "size": 5842},
+              {"name": "IBM Racional Developer", "size": 1375},
+              {"name": "NetBeans", "size": 2202},
+              {"name": "Selenium IDE", "size": 2047}
+              ]
+            },
+            {
+            "name": "Frameworks",
+            "children": [
+              {"name": "JasperReport", "size": 17010},
+              {"name": "Eclipse", "size": 5842},
+              {"name": "IBM Racional Developer", "size": 1375},
+              {"name": "NetBeans", "size": 2202},
+              {"name": "Selenium IDE", "size": 2047}
+              ]
+            }         
+        ]
+      },{
+        "name": "PHP",
+        "children": [
+              {"name": "Cake", "size": 17010},
+              {"name": "Yii", "size": 17010}
+        ]
+      },{
+        "name": "ASP Classic", 
+        "size": 17010
+      },{
+        "name": "VB.NET", 
+        "size": 17010
+      },{
+        "name": "NodeJs", 
+        "size": 17010
+      },{
+        "name": "Android", 
+        "size": 17010
+      },{
+        "name": "Swift", 
+        "size": 17010
+      },{
+        "name": "PL/SQL", 
+        "size": 17010
+      }
     ]
-   }
- ]
+    }, {
+      "name": "FrontEnd",
+      "children": [
+          {"name": "HTML5", "size": 17010},
+          {"name": "Primefaces", "size": 17010},
+          {
+            "name": "CSS3",
+            "children": [
+              {"name": "Bootstrap", "size": 17010},
+              {"name": "W3CSS", "size": 17010},
+              {"name": "Material", "size": 17010},
+              {"name": "Materialize", "size": 17010}
+            ]
+          },
+          {
+            "name": "JavaScript",
+            "children": [
+              {"name": "React", "size": 17010},
+              {"name": "Vue", "size": 1010},
+              {"name": "AngularJS", "size": 40010},
+              {"name": "Gulp", "size": 5010},
+              {"name": "Grunt", "size": 5010},
+              {"name": "Bower", "size": 5010},
+              {"name": "D3", "size": 5010}
+            ]
+          },
+          {
+            "name": "TypeScript",
+            "children": [
+              {"name": "Angular", "size": 17010}
+            ]
+          },          
+          {"name": "Velocity", "size": 17010},
+          {"name": "VBScript", "size": 17010},
+          {"name": "Dart", "size": 17010}
+      ]
+    }, {
+      "name": "Servers",
+      "children": [
+            {"name": "Wildfly", "size": 17010},
+            {"name": "JBoss EAP", "size": 17010},
+            {"name": "Tomcat", "size": 17010},
+            {"name": "Websphere", "size": 17010},
+            {"name": "Apache", "size": 17010},
+            {"name": "IIS", "size": 17010},
+            {"name": "Node", "size": 17010}
+        ]
+      }, {
+      "name": "DataBase",
+      "children": [
+            {"name": "Oracle", "size": 17010},
+            {"name": "DB2", "size": 17010},
+            {"name": "MySql", "size": 17010},
+            {"name": "SQLServer", "size": 17010},
+            {"name": "Postgre", "size": 17010},
+            {"name": "Firebase", "size": 17010}
+        ]
+    },{
+      "name": "Arquitecture",
+      "children": [
+            {"name": "Microserviços", "size": 17010},
+            {"name": "Nanoserviços", "size": 17010},
+            {"name": "Reativa", "size": 17010},
+            {"name": "Monolitica", "size": 17010},
+            {"name": "SOA", "size": 17010},
+            {"name": "WebComponents", "size": 17010}
+        ]
+    }]
 }

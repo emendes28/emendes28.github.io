@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300');
+
 body,
 div,
 ul,
@@ -11,7 +13,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .clear-fix {
@@ -26,7 +28,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: lightcyan;
   line-height: 48px;
   display: inline;
 }
@@ -100,16 +102,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: lightcyan;
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: lightcyan;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: lightcyan;
 }
 
 .white-text {
@@ -129,7 +131,12 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+background-image: -webkit-linear-gradient(51deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+background-image: -o-linear-gradient(51deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+-webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+-o-animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .flex-box {
@@ -239,4 +246,3 @@ span {
   stroke: #ccc;
   stroke-width: 1.5px;
 }
-

@@ -11,11 +11,19 @@ function show() {
     projects.display();
     work.display();
 
-    //$('#main').append(internationalizeButton);
+   // $('#main').prepend(internationalizeButton);
     $("#mapDiv").append(googleMap);
+    $(function () {
+    $('.SendEmail').click(function (event) {
+        var email = 'evandrosimendes@gmail.com';
+        var subject = 'Work';
+        var emailBody = 'Dei uma olhada em seu curriculo e gostei do seu perfil para o trabalho : ' ;
+        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+    });
+});
 }
 
-var skills = ["programming","analist","developer","codding","research","consulting"];
+var skills = ["analist","developer","codding","research","consulting"];
 
 var bio = {
     "name" : "Evandro Mendes",
@@ -62,10 +70,13 @@ var bio = {
 
 
             $("#header").append(HTMLskillsStart);
-        /*for(skill in bio.skills){
-            formattedSkill = HTMLskills.replace("%data%",bio.skills[skill]);
-            $("#skills").prepend(formattedSkill);
-        }*/
+            var mq = window.matchMedia( "(max-width: 900px)" );
+            if (mq.matches) {
+                for(skill in bio.skills){
+                    formattedSkill = HTMLskills.replace("%data%",bio.skills[skill]);
+                    $("#skills").prepend(formattedSkill);
+                }
+            }
        
     }
 };
