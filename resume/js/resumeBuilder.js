@@ -1,6 +1,6 @@
 function inName(name) {  
     var names = name.split(" ");
-    names[1] = names[1].toUpperCase();
+    names[names.length -1] = names[names.length -1].toUpperCase();
     names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();   
     return names.join(" ");
 }
@@ -14,19 +14,34 @@ function show() {
    // $('#main').prepend(internationalizeButton);
     $("#mapDiv").append(googleMap);
     $(function () {
-    $('.SendEmail').click(function (event) {
-        var email = 'evandrosimendes@gmail.com';
-        var subject = 'Work';
-        var emailBody = 'Dei uma olhada em seu curriculo e gostei do seu perfil para o trabalho : ' ;
-        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+        $('.envelope').click(function (event) {
+            var subject = 'Job Freelancer';
+            var emailBody = 'Dei uma olhada em seu curriculo e gostei do seu perfil para o trabalho : ' ;
+            document.location = "mailto:"+bio.contacts.email+"?subject="+subject+"&body="+emailBody;
+        });
+
+        $('.mobile').click(function (event) {
+            document.location = "tel:"+bio.contacts.mobile;
+        });
+
+        $('.github').click(function (event) {
+            document.location = "https://github.com/"+bio.contacts.github;
+        });
+
+        $('.twitter').click(function (event) {
+            document.location = "https://twitter.com/"+bio.contacts.twitter;
+        });
+
+        $('.location').click(function (event) {
+            document.location = "https://www.google.com.br/maps/place/"+bio.contacts.location;
+        });
     });
-});
 }
 
 var skills = ["analist","developer","codding","research","consulting"];
 
 var bio = {
-    "name" : "Evandro Mendes",
+    "name" : "Evandro de Santa Isabel Mendes",
     "role" : "System Analist",
     "contacts" : {
         "mobile" : "+55 71 999954459", 

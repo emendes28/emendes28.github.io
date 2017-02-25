@@ -131,13 +131,14 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-background-image: -webkit-linear-gradient(51deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-background-image: -o-linear-gradient(51deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
--webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
--o-animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition: all .5s;
+  height:auto;
+  background-color:#5f3c24;
+  background-image:linear-gradient(to bottom, transparent 1px, rgba(0,0,0,.1) 1px);
+  background-size: auto 2px;
 }
+
+#header:hover { background-color:saddlebrown; }
 
 .flex-box {
   display: -webkit-flex;
@@ -245,4 +246,8 @@ span {
   fill: none;
   stroke: #ccc;
   stroke-width: 1.5px;
+}
+
+.contact {
+  cursor: crosshair;
 }
