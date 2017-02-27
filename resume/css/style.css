@@ -140,6 +140,11 @@ a {
 
 #header:hover { background-color:saddlebrown; }
 
+.biopic-mobile {
+  width: 143.385827px;
+  height: 151.181102362px;
+}
+
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -226,6 +231,11 @@ span {
   .biopic {
     display: block;
   }
+
+  .biopic-mobile {
+    display: none;
+  }
+
 }
 
 .node {

@@ -29,7 +29,7 @@ function show() {
         });
 
         $('.twitter').click(function (event) {
-            document.location = "https://twitter.com/"+bio.contacts.twitter;
+            document.location = "https://twitter.com/"+bio.contacts.twitter.replace('@','');
         });
 
         $('.location').click(function (event) {
@@ -54,8 +54,10 @@ var bio = {
     "skills": skills,
     "biopic" : "images/me.jpg",
     "display" : function () {        
-        var formattedName,formattedRole,formatedWelcomeMsg, formattedMobile,formattedEmail,formattedTwitter,formattedGithub,formattedLocation,formattedBioPic,formattedSkill;
-
+        var contactsIds, formattedName,formattedRole,formatedWelcomeMsg, formattedMobile,formattedEmail,formattedTwitter,formattedGithub,formattedLocation,formattedBioPic,formattedSkill;
+        
+        contactsIds = ["#topContacts","#footerContacts"];
+        
         formattedName = HTMLheaderName.replace("%data%",inName(bio.name));
         formattedRole = HTMLheaderRole.replace("%data%",bio.role);
         formatedWelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage);
@@ -66,33 +68,26 @@ var bio = {
         formattedGithub = HTMLgithub.replace("%data%",bio.contacts.github);
         formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
         
-
-        
         $('#header').prepend(formattedRole);
         $('#header').prepend(formattedName);
         $('#header').append(formattedBioPic);
         $('#header').append(formatedWelcomeMsg);
-        $("#topContacts").append(formattedMobile);
-        $("#topContacts").append(formattedEmail);
-        $("#topContacts").append(formattedTwitter);
-        $("#topContacts").append(formattedGithub);        
-        $("#topContacts").append(formattedLocation);
-        $("#footerContacts").append(formattedMobile);
-        $("#footerContacts").append(formattedEmail);
-        $("#footerContacts").append(formattedTwitter);
-        $("#footerContacts").append(formattedGithub);        
-        $("#footerContacts").append(formattedLocation);
-
-
-            $("#header").append(HTMLskillsStart);
-            var mq = window.matchMedia( "(max-width: 900px)" );
-            if (mq.matches) {
-                for(skill in bio.skills){
-                    formattedSkill = HTMLskills.replace("%data%",bio.skills[skill]);
-                    $("#skills").prepend(formattedSkill);
-                }
+        $("#header").append(HTMLskillsStart);
+        
+            for(id in contactsIds){
+                $(contactsIds[id]).append(formattedMobile);
+                $(contactsIds[id]).append(formattedEmail);
+                $(contactsIds[id]).append(formattedTwitter);
+                $(contactsIds[id]).append(formattedGithub);        
+                $(contactsIds[id]).append(formattedLocation);
             }
-       
+
+        if ($( window ).width() < 900) {
+            for(skill in bio.skills){
+                formattedSkill = HTMLskills.replace("%data%",bio.skills[skill]);
+                $("#skills").prepend(formattedSkill);
+            }
+        }       
     }
 };
 

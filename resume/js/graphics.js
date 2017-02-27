@@ -1,5 +1,4 @@
-var mq = window.matchMedia( "(min-width: 900px)" );
-if (mq.matches) {
+if ($( window ).width() > 900) {
     var margin = {top: 20, right: 120, bottom: 20, left: 120},
         width = 920 - margin.right - margin.left,
         height = 320 - margin.top - margin.bottom;
