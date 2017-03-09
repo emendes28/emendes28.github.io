@@ -285,6 +285,13 @@ var work = {
 var projects = {
     "projects" : [ 
         { 
+            "description" : "Meus projetos e sistemas feito por estudo, trabalho ou diversão com a motivação da nanograduação",
+            "title" : "Portifolio",
+            "link" : "https://emendes28.github.io/portifolio/index.html",
+            "dates" : "",
+            "images" : ["images_src/portifolio-320x240.png"]
+        }, 
+        { 
             "description" : "Blog post exemple - study ",
             "title" : "Blog post exemple",
             "link" : "https://goo.gl/WDzP52e",
@@ -416,13 +423,7 @@ var projects = {
             "link" : "",
             "dates" : "",
             "images" : [""]
-        },{ 
-            "description" : "Meus projetos e sistemas feito por estudo, trabalho ou diversão com a motivação da nanograduação",
-            "title" : "Portifolio",
-            "link" : "https://emendes28.github.io/portifolio/index.html",
-            "dates" : "",
-            "images" : ["images_src/portifolio-320x240.png"]
-        }                             
+        }                            
     ],
     "display" : function() {
                     for(project in projects.projects){
