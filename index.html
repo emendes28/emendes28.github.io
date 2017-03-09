@@ -1,69 +1,134 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
 
-        <link rel="stylesheet" href="css/framework.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Portifolio</title>
-    </head>
-    <body>
-        <article class="grid">
-            <!-- Cabeçalho -->
-            
-                <header class="row header">
-                    <figure class="col-2">
-                        <img class="logo" src="img/logo.svg" alt="my logo an image of terminal codding">
-                    </figure>
-                    <div id="title" class="col-10">
-                    <h1 class="title name">Evandro Mendes</h1>
-                    <h4 class="title function">Full Stack Developer</h4>
-                    </div>
-                </header>
-                <hr />
-            <!-- Pronto central da aplicação -->
-            <main class="row">
-                    <figure class="col-12">
-                    <!-- Banner principal -->
-                            <a href="resume/index.html">
-                        <picture>
-                                <source srcset="img/programming-is-magic.jpg" media="(min-width: 550px)">
-                                <img class="central" src="img/topo.jpeg" alt="15 Most Popular Programming Languages You Must Learn in 2015">
-                            
-                        </picture></a>
-                    </figure>
-            </main>
-            
-            <section id="jobs" class="row">
-                <header class="col-12">
-                <h2>Featured Work </h2>
-                </header>
-            </section>
+  <meta charset="utf-8">
 
-            <footer class="row">
-                <!-- Autor : Evandro Mendes-->
-                <p class="col-10">&copy;2017 Evandro Mendes.</p>
+  <title>Resume</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-amber.min.css" />
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <div id="main">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Evandro Mendes</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="#workExperience">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            Work Experience
+          </a>
+          <a class="mdl-navigation__link" href="#projects">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            Projects
+          </a>
+          <a class="mdl-navigation__link" href="#education">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            Education
+          </a>
+          <a class="mdl-navigation__link" href="#mapDiv">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            Where I've Lived and Worked
+          </a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Evandro Mendes</span>
+        <img src="images/me.jpg" class="biopic-mobile">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#workExperience">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            Work Experience
+          </a>
+          <a class="mdl-navigation__link" href="#projects">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            Projects
+          </a>
+          <a class="mdl-navigation__link" href="#education">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            Education
+          </a>
+          <a class="mdl-navigation__link" href="#mapDiv">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            Where I've Lived and Worked
+          </a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            <div id="header" class="center-content clear-fix">
+              <ul id="topContacts" class="flex-box"></ul>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="workExperience" class="gray">
+              <h2>
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                Work Experience</h2>
+            </div>
+            <div id="projects">
+              <h2>
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                Projects</h2>
+            </div>
+            <div id="education" class="gray">
+            <h2>
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              Education</h2>
+            </div>
+            <div id="mapDiv">          
+              <h2>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                Where I've Lived and Worked</h2>
+            </div>
+           
+            <footer class="mdl-mini-footer footer-contacts">   
+                <h2 class="center-text">Let's Connect</h2>
+                <ul id="footerContacts"  class="mdl-mini-footer__link-list flex-box"></ul>
             </footer>
-            </article>
-
-            <!-- substitui temporariamente o código do JS -->
-            <script type="text/template" id="jobTemplate">
-                <figure class="col">
-                    <a href="{{work.link}}">
-                        <img src="images_src/{{work.img}}" alt="{{work.alt}}">
-                    </a>
-                    <figcaption>
-                        <h3>{{work.description}}</h3>                        
-                        <a href="{{work.link}}">
-                            <h4><em>{{work.link}}</em></h4>
-                        </a>
-                    </figcaption>
-                </figure>
-            </script>
-            <!-- Array com os trabalhos realizados -->
-            <script src="data/work.js"></script>
-            <!-- Código a ser injetado -->
-            <script src="js/app.js"></script>
-    </body>
+        </div>
+      </main>
+    </div>    
+  </div>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/resumeBuilder.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="js/graphics.js"></script>
+   <script>
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
 </html>

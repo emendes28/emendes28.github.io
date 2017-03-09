@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/framework.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Portifolio</title>
+    </head>
+    <body>
+        <article class="grid">
+            <!-- Cabeçalho -->
+            
+                <header class="row header">
+                    <figure class="col-2">
+                        <img class="logo" src="img/logo.svg" alt="my logo an image of terminal codding">
+                    </figure>
+                    <div id="title" class="col-10">
+                    <h1 class="title name">Evandro Mendes</h1>
+                    <h4 class="title function">Full Stack Developer</h4>
+                    </div>
+                </header>
+                <hr />
+            <!-- Pronto central da aplicação -->
+            <main class="row">
+                    <figure class="col-12">
+                    <!-- Banner principal -->
+                        <picture>
+                                <source srcset="img/programming-is-magic.jpg" media="(min-width: 550px)">
+                                <img class="central" src="img/topo.jpeg" alt="15 Most Popular Programming Languages You Must Learn in 2015">                            
+                        </picture>
+                    </figure>
+            </main>
+            
+            <section id="jobs" class="row">
+                <header class="col-12">
+                <h2>Featured Work </h2>
+                </header>
+            </section>
+
+            <footer class="row">
+                <!-- Autor : Evandro Mendes-->
+                <p class="col-10">&copy;2017 Evandro Mendes.</p>
+            </footer>
+            </article>
+
+            <!-- substitui temporariamente o código do JS -->
+            <script type="text/template" id="jobTemplate">
+                <figure class="col">
+                    <a href="{{work.project}}">
+                        <img src="images_src/{{work.img}}" alt="{{work.alt}}">
+                    </a>
+                    <figcaption>
+                        <h3>{{work.description}}</h3>                        
+                        <a href="{{work.link}}">
+                            <h4><em>{{work.link}}</em></h4>
+                        </a>
+                    </figcaption>
+                </figure>
+            </script>
+            <!-- Array com os trabalhos realizados -->
+            <script src="data/work.js"></script>
+            <!-- Código a ser injetado -->
+            <script src="js/app.js"></script>
+    </body>
+</html>
