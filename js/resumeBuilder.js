@@ -134,12 +134,6 @@ var education = {
             "url" : "https://www.coursera.org/learn/desenvolvimento-agil-com-java-avancado/home/welcome"
         },
         {
-            "title" : "TDD – Developement of software drive for tests",
-            "school" : "Instituto Tecnológico de Aeronáutica - ITA",
-            "dates" : "February 2017 - March 2012",
-            "url" : "https://www.coursera.org/learn/tdd-desenvolvimento-de-software-guiado-por-testes/home/welcome"
-        },
-        {
             "title" : "Scrum Fundamentals Certified",
             "school" : "SCRUMstudy, License 567148",
             "dates" : "February 2017 ",
@@ -150,24 +144,6 @@ var education = {
             "school" : "Microsoft",
             "dates" : "February 2017 ",
             "url" : "https://drive.google.com/open?id=0B92AeDAoseReMTNncUlVQ2lWY2M"
-        },
-        {
-            "title" : "Introduced of NodeJS with Typescript in Visual Studio Code",
-            "school" : "Microsoft",
-            "dates" : "February 2017 ",
-            "url" : "https://drive.google.com/open?id=0B92AeDAoseReMTNncUlVQ2lWY2M"
-        },
-        {
-            "title" : "English",
-            "school" : "Duolingo",
-            "dates" : "February 2017 ",
-            "url" : ""
-        },
-        {
-            "title" : "JCL/COBOL",
-            "school" : "Unijorge",
-            "dates" : "February 2017 ",
-            "url" : ""
         }
     ],
     "display" : function() {
