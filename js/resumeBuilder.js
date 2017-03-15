@@ -102,14 +102,6 @@ var education = {
             "url" : "https://udacity.com/"
         },
         {
-            "name" : "UNIFACS",
-            "location" : "Rio Vemelho, Salvador - BA",
-            "degree" : "BA",
-            "majors" : ["Engineer","Computer"],
-            "dates" : "2010",
-            "url" : "http://www.unifacs.br/"
-        },
-        {
             "name" : "Unijorge",
             "location" : "Paralela, Salvador - BA",
             "degree" : "BA",
@@ -176,12 +168,6 @@ var education = {
             "school" : "Unijorge",
             "dates" : "February 2017 ",
             "url" : ""
-        },
-        {
-            "title" : "Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)",
-            "school" : "Actívate con Google",
-            "dates" : "February 2017 ",
-            "url" : "https://drive.google.com/open?id=0B92AeDAoseReRDkzVk82aVk2QzA"
         }
     ],
     "display" : function() {
@@ -216,13 +202,6 @@ var education = {
 var work = {
     "jobs" : [
         {
-            "employer" : "I am",
-            "title" : "IT Solutions Architect",
-            "location" : "Sussuarana - Salvador - BA",
-            "dates" : "June 2016 - Present",
-            "description" : "DevOps Consulting and development of native and hybrid solutions across platforms"
-        },
-        {
             "employer" : "Solutis",
             "title" : "Systems Analyst Developer",
             "location" : "CAB - Salvador - BA",
@@ -255,12 +234,6 @@ var work = {
             "location" : "Horto Bela Vista - Salvador - BA",
             "dates" : "February 2011 - July 2011",
             "description" : "FrontEnd Developement of many projects and manutence"
-        },{
-            "employer" : "Login Informatica",
-            "title" : "Trainee",
-            "location" : "7 Portas - Salvador - BA",
-            "dates" : "July 2010 - February 2011",
-            "description" : "Return of damaged materials, like as power supply, keyboard, mouse..."
         }
     ],
     "display" : function () {
@@ -290,28 +263,6 @@ var projects = {
             "link" : "https://emendes28.github.io/portifolio/index.html",
             "dates" : "",
             "images" : ["images_src/portifolio-320x240.png"]
-        }, 
-        { 
-            "description" : "Blog post exemple - study ",
-            "title" : "Blog post exemple",
-            "link" : "https://goo.gl/WDzP52e",
-            "dates" : "02/2017",
-            "images" : ["images_src/blog-post-exemple-320x240.png"]
-        },{ 
-            "description" : "Bootstrap landing page - study",
-            "title" : "Bootstrap landing page",
-            "link" : "https://goo.gl/Kn1ULE",
-            "dates" : "02/2017",
-            "images" : ["images_src/bootstrap-landing-page-320x240.png",
-                        "images_src/bootstrap-tela2-320x240.png",
-                        "images_src/bootstrap-tela3-320x240.png",
-                        "images_src/bootstrap-tela4-320x240.png"]
-        },{ 
-            "description" : "Card of animal - project of NanoDegree",
-            "title" : "Card of animal",
-            "link" : "https://goo.gl/Bnc6eK",
-            "dates" : "02/2017",
-            "images" : ["images_src/card-320x240.png"]
         },{ 
             "description" : "Encarte Digital is project in my graduacion",
             "title" : "Encarte Digital",
@@ -321,13 +272,6 @@ var projects = {
                         "images_src/encarte-digital-menu-320x240.png",
                         "images_src/encarte-digital-tablet-320x240.png",
                         "images_src/EncarteDigital-320x240.png"]
-        },{ 
-            "description" : "Mockup to article - study",
-            "title" : "Mockup to article",
-            "link" : "https://goo.gl/zWdkqK",
-            "dates" : "02/2017",
-            "images" : [ "images_src/mockup-to-article-320x240.png",
-                        "images_src/mockup2-320x240.png"]
         },{ 
             "description" : "Sistema de outorga de candidatos do concurso feito em nodeJs com websockets para os paines e em SOA com angularJs, bootstrap,bower, java 8 e as JSR 311, 317, 330, 339, 356, 365, JasperReports, maven",
             "title" : "Sistema de outorga",
@@ -393,36 +337,6 @@ var projects = {
             "link" : "http://www.acbeubahia.org.br/erp/acesso.php",
             "dates" : "",
             "images" : ["images_src/erp-320x240.png"]
-        },{ 
-            "description" : "Manutenção em um sistema VB.NET desktop",
-            "title" : "Sistema de emissão de carteirinha alunos ACBEU",
-            "link" : "",
-            "dates" : "",
-            "images" : [""]
-        },{ 
-            "description" : "Auxlio na migração da aplicação em vb6 para Java SOA e angular 1.2.X",
-            "title" : "RSUS",
-            "link" : "",
-            "dates" : "",
-            "images" : [""]
-        },{ 
-            "description" : "Extração de dados e desenvolvimento de querys com exportação em poucas vezes manutenção em ASP e aprendizado de banco de dados NATURAL e sistema em COBOL",
-            "title" : "Emissão de Relatórios e Consulta de Extração de Dados na SEC",
-            "link" : "",
-            "dates" : "",
-            "images" : [""]
-        },{             
-            "description" : "Sistema usando arquitetura AWB e biblioteca PDC para comunicação com COBOL com a utilização do FWOP, framework para ajudar o uso dos EJB e comunicando com o sistema web via soap. Também fazendo uso do GPAR que é um componente coorporativo para gestão de parametros, além disso sava JSP que é o  JSF1.2 e Spring Security no Framework",
-            "title" : "GCCF - Gestão de Conteudo Corporativo",
-            "link" : "",
-            "dates" : "",
-            "images" : [""]
-        },{ 
-            "description" : "Iniciei o desenvolvimento da aplicação que inovou a BU que fiquei inserido pois usou a nova versão do AWB que é um conjunto de tecnologias semelhante ao Spring Boot ou warm ",
-            "title" : "PLB Cartões",
-            "link" : "",
-            "dates" : "",
-            "images" : [""]
         }                            
     ],
     "display" : function() {
