@@ -40,11 +40,9 @@
             {
             "name": "Frameworks",
             "children": [
-              {"name": "JasperReport", "size": 17010},
-              {"name": "Eclipse", "size": 5842},
-              {"name": "IBM Racional Developer", "size": 1375},
-              {"name": "NetBeans", "size": 2202},
-              {"name": "Selenium IDE", "size": 2047}
+              {"name": "Spring Boot", "size": 17010},
+              {"name": "JBoss", "size": 5842},
+              {"name": "JEE7", "size": 5842}
               ]
             }         
         ]

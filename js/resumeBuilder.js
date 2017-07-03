@@ -230,6 +230,15 @@ var work = {
                 }
 };
 
+/*{ 
+            "description" : "Portal de serviços com consulta publica e diversas funcionalidades de acesso ao cidadão usando uma arquitetura reativa e microservice, com java EE 7, java 8, Angular.",
+            "title" : "Portal de Serviços",
+            "link" : "",
+            "dates" : "August 2016 to Present",
+            "images" : ["images_src/portalservicos-320x240.jpeg",
+                        "images_src/ordenacaoprocessual-320x240.jpeg",
+                        "images_src/sentenca-interdicao-320x240.jpeg"]
+        },*/
 
 var projects = {
     "projects" : [ 
@@ -257,14 +266,6 @@ var projects = {
                         "images_src/sisout2-320x240.jpeg",
                         "images_src/sisout3-320x240.jpeg",
                         "images_src/sisout4-320x240.jpeg"]
-        },{ 
-            "description" : "Portal de serviços com consulta publica e diversas funcionalidades de acesso ao cidadão usando uma arquitetura reativa e microservice, com java EE 7, java 8, Angular.",
-            "title" : "Portal de Serviços",
-            "link" : "",
-            "dates" : "August 2016 to Present",
-            "images" : ["images_src/portalservicos-320x240.jpeg",
-                        "images_src/ordenacaoprocessual-320x240.jpeg",
-                        "images_src/sentenca-interdicao-320x240.jpeg"]
         },{ 
             "description" : "Projeto de migração a sistema de apolice de seguros feito em AngularJs, bootstrap e backend Java com arquitetura SOA",
             "title" : "GSRE - Avliq",
