@@ -1,11 +1,11 @@
 {
     "dir": "ltr",
-    "lang": "en",
+    "lang": "pt-br",
     "name": "Controle gastos",
     "scope": "./ControleGastos",
     "display": "standalone",
     "start_url": "../index.html",
-    "short_name": "NF",
+    "short_name": "Gastos Control",
     "icons": [
         {
             "src": "./assets/android-icon-36x36.png",
