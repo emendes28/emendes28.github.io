@@ -1,8 +1,8 @@
 {
     "dir": "ltr",
-    "lang": "en",
+    "lang": "pt-br",
     "name": "Controle gastos",
-    "scope": "./",
+    "scope": "./ControleGastos",
     "display": "fullscreen",
     "start_url": "./index.html",
     "short_name": "Ctrl Gastos",
