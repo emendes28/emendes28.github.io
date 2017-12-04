@@ -12,7 +12,7 @@
   <script>//Este Se abaixo verifica se o seu navegador pode executar serviceWorker
     if (navigator.serviceWorker) {
       //Ao entraa ele tenta registrar um service work
-      navigator.serviceWorker.register('sw.js').then(
+      navigator.serviceWorker.register('./sw.js').then(
         function (data) {
           //Caso a registro (promessa) seja executada com sucesso :) começamos
           console.info('O ServiceWorker está habilitado para : ', data.scope);
