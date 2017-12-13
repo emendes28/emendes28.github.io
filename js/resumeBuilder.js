@@ -1,4 +1,4 @@
-function inName(name) {  
+﻿function inName(name) {  
     var names = name.split(" ");
     names[names.length -1] = names[names.length -1].toUpperCase();
     names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();   
@@ -245,7 +245,7 @@ var projects = {
         { 
             "description" : "Meus projetos e sistemas feito por estudo, trabalho ou diversão com a motivação da nanograduação",
             "title" : "Portifolio",
-            "link" : "https://emendes28.github.io/portifolio/index.html",
+            "link" : "#/portifolio",
             "dates" : "",
             "images" : ["images_src/portifolio-320x240.png"]
         },{ 
@@ -317,8 +317,8 @@ var projects = {
         }                            
     ],
     "display" : function() {
-                    for(project in projects.projects){
-                        var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].title);                       
+                    for(project in projects.projects){   
+                        var formattedTitle = HTMLprojectTitle.replace("%data%",projects.projects[project].link).replace("%data%",projects.projects[project].title);                       
                         var formattedDescription = HTMLprojectDescription.replace("%data%",projects.projects[project].description);
                         var formattedDates =  HTMLprojectDates.replace("%data%",projects.projects[project].dates);
                         
